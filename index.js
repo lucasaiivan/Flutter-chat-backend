@@ -24,6 +24,7 @@ const publicPath = path.resolve(__dirname,'public');
 
 // Mis rutas 
 app.use('/api/login',require('./routes/auth'));
+app.use('/api/usuarios',require('./routes/usuarios'));
 
 app.use( express.static(publicPath));
 
